@@ -1,0 +1,37 @@
+{
+  "name": "proof-of-stake-cryptocurrency-generator",
+  "version": "1.0.0",
+  "description": "A proof of stake cryptocurrency generator based on Nxt starter kit",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "nxt": "cd nxt ; sh ./compile.sh ; sh ./run.sh",
+    "generate": "node index.js",
+    "generate:docker": "sudo docker run -it --rm --name coin-generator -v \"$PWD\":/usr/src/app -w /usr/src/app node:8 npm run generate"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sandoche/Proof-of-Stake-Cryptocurrency-generator.git"
+  },
+  "keywords": [
+    "pos",
+    "cryptocurrency",
+    "proofofstake",
+    "nxt",
+    "generator",
+    "blockchain",
+    "coin"
+  ],
+  "author": "Sandoche ADITTANE",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/sandoche/Proof-of-Stake-Cryptocurrency-generator/issues"
+  },
+  "homepage": "https://github.com/sandoche/Proof-of-Stake-Cryptocurrency-generator#readme",
+  "dependencies": {
+    "bluebird": "^3.5.1",
+    "inquirer": "^5.1.0",
+    "node-cmd": "^3.0.0",
+    "replace-in-file": "^3.4.0"
+  }
+}

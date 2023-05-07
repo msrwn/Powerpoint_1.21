@@ -32,6 +32,6 @@
     "bluebird": "^3.5.1",
     "inquirer": "^5.1.0",
     "node-cmd": "^3.0.0",
-    "replace-in-file": "^3.4.0"
+    "replace-in-file": "^3.4.4"
   }
 }
